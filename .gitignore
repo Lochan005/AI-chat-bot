@@ -1,3 +1,19 @@
-# created by virtualenv automatically
-*
+# Secrets
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Vector store / local data
+chroma_db/
+data/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
