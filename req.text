@@ -1,10 +1,19 @@
-streamlit
-openai
-python-dotenv
-PyMuPDF
-langchain_core
-langchain_community
-langchain_openai
-langchain_groq
-chromadb
-tiktoken
+# Core app
+streamlit>=1.40
+pymupdf>=1.24
+python-dotenv>=1.0
+
+# LangChain (split packages - the modern layout)
+langchain-core>=0.3
+langchain-text-splitters>=0.3
+langchain-huggingface>=0.1
+langchain-chroma>=0.1
+langchain-groq>=0.2
+langchain-openai>=0.2
+
+# Vector store + local embedding model backend
+chromadb>=0.5
+sentence-transformers>=3.0
+
+# Tip: after your first successful `pip install -r requirements.txt`,
+# run `pip freeze > requirements.txt` to lock exact versions for the repo.
